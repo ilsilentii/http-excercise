@@ -1,15 +1,14 @@
-var methods = require('./print_parameteres');
-var getHTML = methods.getHTML;
-
+var Mymethods = require('./print_parameters')
+var getHTML = Mymethods.getHTML;
 
 var requestOptions = {
- host: 'sytantris.github.io',
- path: '/http-examples/step6/uppercase.html'
+  host: 'sytantris.github.io',
+  path: '/http-examples/step6/uppercase.html'
 };
 
 function printUpperCase (html) {
 
- console.log(html.toLowerCase());
+  console.log(html.toUpperCase());
 
 }
 
